@@ -1,0 +1,23 @@
+@import "./imports/_normalize.scss";
+
+$background-color: #f4f4f4
+
+
+
+
+*{ box-sizing: border-box }
+
+img {
+   width: 50%;
+   display: block;
+   @include ;border: "$background-color";
+}
+
+.avatar {
+
+  border-radius: 50%;
+}
+.ambos{
+  margin: 0 auto;
+  width: 200px;
+}

@@ -1,0 +1,60 @@
+/*
+Error: Invalid CSS after "*": expected expression (e.g. 1px, bold), was "{ box-sizing: b..."
+        on line 8 of ./scss/main.scss
+
+3: $background-color: #f4f4f4
+4: 
+5: 
+6: 
+7: 
+8: *{ box-sizing: border-box }
+9: 
+10: img {
+11:    width: 50%;
+12:    display: block;
+13:    @include ;border: "$background-color";
+
+Backtrace:
+./scss/main.scss:8
+/home/santilla971/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/sass-3.5.1/lib/sass/scss/parser.rb:1278:in `expected'
+/home/santilla971/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/sass-3.5.1/lib/sass/script/lexer.rb:231:in `expected!'
+/home/santilla971/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/sass-3.5.1/lib/sass/script/parser.rb:723:in `assert_expr'
+/home/santilla971/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/sass-3.5.1/lib/sass/script/parser.rb:280:in `times_div_or_mod'
+/home/santilla971/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/sass-3.5.1/lib/sass/script/parser.rb:272:in `plus_or_minus'
+/home/santilla971/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/sass-3.5.1/lib/sass/script/parser.rb:272:in `relational'
+/home/santilla971/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/sass-3.5.1/lib/sass/script/parser.rb:272:in `eq_or_neq'
+/home/santilla971/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/sass-3.5.1/lib/sass/script/parser.rb:272:in `and_expr'
+/home/santilla971/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/sass-3.5.1/lib/sass/script/parser.rb:272:in `or_expr'
+/home/santilla971/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/sass-3.5.1/lib/sass/script/parser.rb:473:in `space'
+/home/santilla971/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/sass-3.5.1/lib/sass/script/parser.rb:414:in `interpolation'
+/home/santilla971/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/sass-3.5.1/lib/sass/script/parser.rb:338:in `expr'
+/home/santilla971/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/sass-3.5.1/lib/sass/script/parser.rb:721:in `assert_expr'
+/home/santilla971/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/sass-3.5.1/lib/sass/script/parser.rb:68:in `parse'
+/home/santilla971/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/sass-3.5.1/lib/sass/scss/parser.rb:1134:in `sass_script'
+/home/santilla971/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/sass-3.5.1/lib/sass/scss/parser.rb:642:in `variable'
+/home/santilla971/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/sass-3.5.1/lib/sass/scss/parser.rb:696:in `block_child'
+/home/santilla971/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/sass-3.5.1/lib/sass/scss/parser.rb:689:in `block_contents'
+/home/santilla971/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/sass-3.5.1/lib/sass/scss/parser.rb:137:in `stylesheet'
+/home/santilla971/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/sass-3.5.1/lib/sass/scss/parser.rb:41:in `parse'
+/home/santilla971/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/sass-3.5.1/lib/sass/engine.rb:414:in `_to_tree'
+/home/santilla971/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/sass-3.5.1/lib/sass/engine.rb:389:in `_render_with_sourcemap'
+/home/santilla971/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/sass-3.5.1/lib/sass/engine.rb:307:in `render_with_sourcemap'
+/home/santilla971/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/sass-3.5.1/lib/sass/plugin/compiler.rb:462:in `update_stylesheet'
+/home/santilla971/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/sass-3.5.1/lib/sass/plugin/compiler.rb:215:in `block in update_stylesheets'
+/home/santilla971/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/sass-3.5.1/lib/sass/plugin/compiler.rb:209:in `each'
+/home/santilla971/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/sass-3.5.1/lib/sass/plugin/compiler.rb:209:in `update_stylesheets'
+/home/santilla971/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/sass-3.5.1/lib/sass/plugin/compiler.rb:443:in `on_file_changed'
+/home/santilla971/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/sass-3.5.1/lib/sass/plugin/compiler.rb:320:in `block in watch'
+/home/santilla971/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/sass-listen-4.0.0/lib/sass-listen/event/config.rb:23:in `call'
+/home/santilla971/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/sass-listen-4.0.0/lib/sass-listen/event/processor.rb:115:in `_process_changes'
+/home/santilla971/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/sass-listen-4.0.0/lib/sass-listen/event/processor.rb:19:in `block in loop_for'
+/home/santilla971/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/sass-listen-4.0.0/lib/sass-listen/event/processor.rb:15:in `loop'
+/home/santilla971/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/sass-listen-4.0.0/lib/sass-listen/event/processor.rb:15:in `loop_for'
+/home/santilla971/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/sass-listen-4.0.0/lib/sass-listen/event/loop.rb:84:in `_wait_for_changes'
+/home/santilla971/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/sass-listen-4.0.0/lib/sass-listen/event/loop.rb:42:in `block in setup'
+/home/santilla971/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/sass-listen-4.0.0/lib/sass-listen/internals/thread_pool.rb:6:in `block in add'
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Error: Invalid CSS after \"*\": expected expression (e.g. 1px, bold), was \"{ box-sizing: b...\"\A         on line 8 of ./scss/main.scss\A \A 3: $background-color: #f4f4f4\A 4: \A 5: \A 6: \A 7: \A 8: *{ box-sizing: border-box }\A 9: \A 10: img {\A 11:    width: 50%;\A 12:    display: block;\A 13:    @include ;border: \"$background-color\";"; }
